@@ -9,6 +9,11 @@ body {
     min-height: 100vh;
 }
 
+.main-section {
+    margin-bottom: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+}
+
 a:visited {
     color: #222;
 }
@@ -212,6 +217,14 @@ a {
     height: 100%;
 }
 
+.background-2 {
+    position: absolute;
+    right: 0px;
+    background-color: #fff;
+    width: 35%;
+    height:100%;
+}
+
 .layer {
     height: 100%;
     display: flex;
@@ -279,6 +292,7 @@ a {
     border: 1px solid #222;
     float: right;
     color: #222;
+    text-transform: capitalize;
 }
 
 .read-more:hover {
@@ -303,6 +317,15 @@ a {
     background-color: #eee;
     width: 35%;
     height: 100%;
+    z-index: -1;
+}
+
+.catalog-bg2 {
+    position: absolute;
+    left: 0px;
+    background-color: #fff;
+    width: 65%;
+    height:100%;
     z-index: -1;
 }
 
@@ -360,7 +383,7 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 0px 0px 30px #999;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 .catalog-img1 {
@@ -408,9 +431,142 @@ a {
     padding: 5px 40px 5px 0px;
     border-bottom: 1px solid white;
     color: white;
+    text-transform: capitalize;
+    font-size: 15px;
 }
 
 .component-detail a div:hover {
     color: rgb(0, 50, 124);
     border-bottom: 2px solid rgb(0, 50, 124);
+}
+
+.notice {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.notice-img {
+    height: 50%;
+    width: 100%;
+    background: url(../images/419fe3784c01c9219643730e9d68017d.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notice-bg {
+    position: absolute;
+    bottom: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.notice .text {
+    padding: 60px 60px 80px 60px;
+}
+.notice .text h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.notice .text p {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.notice-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px 30px 70px;
+    background-color: white;
+}
+
+.notice-component {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #888;
+    padding: 8px;
+    align-items: center;
+}
+
+.notice-component .number {
+    padding: 0px 10px;
+}
+
+.notice-component .number h1 {
+    font-weight: 400;
+    text-align: center;
+    color: #888;
+    transition: all 0.5s;
+}
+
+.notice-component .number p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.notice-component-detail {
+    padding: 0px 20px;
+    flex-grow: 1;
+}
+
+.notice-component .button {
+    border: 2px solid #888;
+    padding: 12px 15px;
+}
+
+.notice-component .button:hover {
+    border: 2px solid rgb(0, 79, 143);
+}
+
+.notice-component .button:hover i {
+    color: rgb(0, 79, 143);
+}
+
+.notice-component:hover {
+    border-bottom: 1px solid rgb(0, 79, 143);
+}
+
+.notice-component:hover .number h1 {
+    color: rgb(0, 79, 143);
+}
+
+.last-btn {
+    color: #222;
+    padding: 10px 20px;
+    border: 1px solid #222;
+    text-transform: capitalize;
+}
+
+.last-btn:hover {
+    background-color: rgb(0, 106, 167);
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px 19px;
+}
+
+.footer {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    z-index: -100;
+}
+
+.footer p {
+    color: #111;
+    margin: 8px;
 }
