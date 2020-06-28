@@ -45,6 +45,7 @@ a:visited {
     top: 0px;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
 }
 
 .logo {
@@ -317,7 +318,7 @@ a {
     background-color: #eee;
     width: 35%;
     height: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .catalog-bg2 {
@@ -326,7 +327,7 @@ a {
     background-color: #fff;
     width: 65%;
     height:100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .catalog .layer {
@@ -340,6 +341,7 @@ a {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    z-index: 1000;
 }
 
 .catalog-title .text {
@@ -462,7 +464,7 @@ a {
     bottom: 0px;
     height: 50%;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     background-color: #fff;
 }
 
@@ -487,6 +489,8 @@ a {
     flex-direction: column;
     padding: 30px 70px 30px 70px;
     background-color: white;
+    z-index: 100;
+    position: relative;
 }
 
 .notice-component {
@@ -540,10 +544,14 @@ a {
 }
 
 .last-btn {
+    position: absolute;
+    bottom: 20px;
     color: #222;
     padding: 10px 20px;
     border: 1px solid #222;
     text-transform: capitalize;
+    z-index: 1000;
+    right: 45%;
 }
 
 .last-btn:hover {
