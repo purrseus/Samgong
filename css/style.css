@@ -341,7 +341,7 @@ a {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .catalog-title .text {
