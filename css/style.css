@@ -5,22 +5,20 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-    min-height: 100vh;
-}
+html { scroll-behavior: smooth; }
+
+body { min-height: 100vh; }
 
 .main-section {
     margin-bottom: 40vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
 }
 
-a:visited {
-    color: #222;
-}
+a:visited { color: #222; }
 
-.container {
-    color: white;
-}
+a { text-decoration: none; }
+
+.container { color: white; }
 
 .container .image {
     background: url(../images/screen-6.jpg);
@@ -56,19 +54,13 @@ a:visited {
     align-items: center;
 }
 
-.logo img {
-    width: 200px;
-}
+.logo img { width: 200px; }
 
 .main-menu {
     display: flex;
     list-style: none;
     justify-content: center;
     flex-grow: 1;
-}
-
-a {
-    text-decoration: none;
 }
 
 .main-menu li {
@@ -91,28 +83,21 @@ a {
     width: 200px;
 }
 
-.sub-menu li {
-    padding: 10px 20px;
-}
+.sub-menu li { padding: 10px 20px; }
 
 .sub-menu li a {
     color: black;
     transition: all 0.1s;
 }
 
-.has-submenu:hover .sub-menu {
-    display: block;
-    
-}
+.has-submenu:hover .sub-menu { display: block; }
 
 .has-submenu:hover {
     border-top: 3px solid rgb(0, 75, 161);
     padding-top: 17px;
 }
 
-.sub-menu li a:hover {
-    color: rgb(0, 80, 155);
-}
+.sub-menu li a:hover { color: rgb(0, 80, 155); }
 
 .icon-header {
     display: flex;
@@ -137,9 +122,7 @@ a {
     text-align: center;
 }
 
-.icon-header:hover {
-    background-color: rgb(78, 144, 219);
-}
+.icon-header:hover { background-color: rgb(78, 144, 219); }
 
 .main-text {
     display: flex;
@@ -318,7 +301,6 @@ a {
     background-color: #eee;
     width: 35%;
     height: 100%;
-    /* z-index: -1; */
 }
 
 .catalog-bg2 {
@@ -327,7 +309,6 @@ a {
     background-color: #fff;
     width: 65%;
     height:100%;
-    /* z-index: -1; */
 }
 
 .catalog .layer {
@@ -344,9 +325,8 @@ a {
     z-index: 100;
 }
 
-.catalog-title .text {
-    flex-grow: 1;
-}
+.catalog-title .text { flex-grow: 1; }
+
 .catalog-title .text h1 {
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -422,9 +402,7 @@ a {
     color: white;
 }
 
-.component-detail p {
-    color: white;
-}
+.component-detail p { color: white; }
 
 .component-detail a div {
     position: absolute;
@@ -468,9 +446,8 @@ a {
     background-color: #fff;
 }
 
-.notice .text {
-    padding: 60px 60px 80px 60px;
-}
+.notice .text { padding: 60px 60px 80px 60px; }
+
 .notice .text h1 {
     font-size: 35px;
     text-transform: uppercase;
@@ -501,9 +478,7 @@ a {
     align-items: center;
 }
 
-.notice-component .number {
-    padding: 0px 10px;
-}
+.notice-component .number { padding: 0px 10px; }
 
 .notice-component .number h1 {
     font-weight: 400;
@@ -527,21 +502,13 @@ a {
     padding: 12px 15px;
 }
 
-.notice-component .button:hover {
-    border: 2px solid rgb(0, 79, 143);
-}
+.notice-component .button:hover { border: 2px solid rgb(0, 79, 143); }
 
-.notice-component .button:hover i {
-    color: rgb(0, 79, 143);
-}
+.notice-component .button:hover i { color: rgb(0, 79, 143); }
 
-.notice-component:hover {
-    border-bottom: 1px solid rgb(0, 79, 143);
-}
+.notice-component:hover { border-bottom: 1px solid rgb(0, 79, 143); }
 
-.notice-component:hover .number h1 {
-    color: rgb(0, 79, 143);
-}
+.notice-component:hover .number h1 { color: rgb(0, 79, 143); }
 
 .last-btn {
     position: absolute;
@@ -577,4 +544,22 @@ a {
 .footer p {
     color: #111;
     margin: 8px;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    padding: 18px;
+    z-index: 1000;
+    background-color: rgb(48, 89, 122);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.scroll-to-top i {
+    font-size: 18px;
+    color: white;
 }
