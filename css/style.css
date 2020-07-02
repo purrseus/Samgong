@@ -124,6 +124,19 @@ a { text-decoration: none; }
 
 .icon-header:hover { background-color: rgb(78, 144, 219); }
 
+.nav-bar {
+    width: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    background-color: white;
+}
+
+.nav-bar i {
+    font-size: 25px;
+}
+
 .main-text {
     display: flex;
     flex-direction: column;
@@ -158,6 +171,7 @@ a { text-decoration: none; }
     width: 200px;
     position: relative;
     z-index: 1;
+    cursor: pointer;
     transition: all 0.4s;
 }
 
@@ -226,9 +240,9 @@ a { text-decoration: none; }
 
 .img-main {
     width: 100%;
-    background: url(../images/987888.jpg) no-repeat right;
+    background: url(../images/987888.jpg) no-repeat;
     background-size: cover;
-    background-position: 2em 0em;
+    background-position: 0em 0em;
 }
 
 .box-content {
@@ -476,6 +490,7 @@ a { text-decoration: none; }
     border-bottom: 1px solid #888;
     padding: 8px;
     align-items: center;
+    transition: all 0.3s;
 }
 
 .notice-component .number { padding: 0px 10px; }
@@ -500,6 +515,7 @@ a { text-decoration: none; }
 .notice-component .button {
     border: 2px solid #888;
     padding: 12px 15px;
+    transition: all 0.3s;
 }
 
 .notice-component .button:hover { border: 2px solid rgb(0, 79, 143); }
