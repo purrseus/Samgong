@@ -1,0 +1,53 @@
+@media screen and (max-width: 1290px) {
+    .box-content { padding: 20px; }
+
+    .notice-content {  width: 80%; }
+}
+
+@media screen and (max-width: 1080px) {
+    .main-menu li { margin: 0px; }
+
+    .content { width: 80%; }
+
+    .catalog .layer { width: 80%; }
+
+    .footer p { font-size: 14px; }
+}
+
+@media screen and (max-width: 1010px) {
+    .main-menu li { padding: 20px 10px; }
+}
+
+@media screen and (max-width: 962px) {
+    .res-menu { display: block; }
+
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: #fff;
+        width: 250px;
+        height: 100vh;
+    }
+
+    .main-menu li {
+        color: black;
+    }
+
+    .sub-menu {
+        background-color: #ddd;
+        width: 100%;
+    }
+
+    .sub-menu {
+        position: static;
+    }
+
+    .nav-area { flex-grow: 1; }
+}
+
+@media screen and (max-width: 837px) {
+    .content { width: 100%; }
+
+}
