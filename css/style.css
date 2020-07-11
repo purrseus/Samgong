@@ -341,7 +341,6 @@ a {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
-    z-index: 100;
 }
 
 .catalog-title .text { flex-grow: 1; }
@@ -545,7 +544,6 @@ a {
     padding: 10px 20px;
     border: 1px solid #222;
     text-transform: capitalize;
-    z-index: 1000;
     margin-bottom: 20px;
     cursor: pointer;
 }
